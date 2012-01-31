@@ -7,8 +7,9 @@ add_breadcrumb "home", :controller=>'asd',:action=>'home'
 def index
 	@adv=Adv.find(params[:id])
 	@cm=@adv.cms.all   
+	@asd=@adv.asd
 add_breadcrumb "Category", :controller=>'asd',:action=>'index'	
-add_breadcrumb "Sub-Category", :controller=>'adv',:action=>'index',:id=>@adv.id
+add_breadcrumb "Sub-Category", :controller=>'adv',:action=>'index',:id=>@asd.id
    
 add_breadcrumb "Sub-Sub-Category", ""	
 	
