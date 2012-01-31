@@ -1,0 +1,12 @@
+<%= form_for @adv ,  :url=>{:action=>'create',:id=>@asd.id} do |f| %>
+<p>
+<%= f.label :subname %>
+<%= f.text_field :subname%>
+</p>
+<p>
+<%#= f.label "Business_&_finance" %>
+<%#= collection_select(:cm,:adv_id,Cm.all,:id,:name) %></p>
+<%#= collection_select(@adv,:asd_id,Adv.all,:conferences,:conferences) %></p>
+</p>
+<%=f.submit "Save Sub-Category"%>
+<%end%>

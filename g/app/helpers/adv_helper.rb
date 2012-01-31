@@ -1,0 +1,2 @@
+module AdvHelper
+end

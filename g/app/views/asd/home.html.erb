@@ -1,0 +1,25 @@
+<h1>Welcome to the webpage</h1>
+<h1 align='right'><%= link_to 'Go to Category ',:action=>'index' %></h1>
+<h4><%= form_for @asd ,:url=>{:action=>'serch'} do|f| %>
+<%= f.label :Select_Category %>
+<%= collection_select(@asd,:id,Asd.all,:id,:name) %></p>
+</h4>
+<%=f.submit  "go To Category"%>
+<% end %>
+<h4 align='right'>
+<%= form_for @adv ,:url=>{:action=>'sad'} do|f| %>
+<%= f.label  :Select_sub_category %>
+<%# @aaa=@asd.advs %>
+<%= collection_select(@adv,:id,Adv.all,:id,:subname) %></p>
+<%=f.submit  "go To Sub-Category"%>
+<% end %>
+</h4>
+
+<h4>
+<%= form_for @cm ,:url=>{:action=>'display'} do|f| %>
+<%= f.label :Select_Sub_Sub_Category %>
+<%#@abc=@adv.cms.all%>
+<%= collection_select(@cm,:id,Cm.all,:id,:name) %></p>
+<%=f.submit  "go To Sub-Sub-Category"%>
+<% end %>
+</h4>

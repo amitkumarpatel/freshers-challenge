@@ -1,0 +1,21 @@
+
+<center>
+<p>
+  <b>Name:</b>
+  <%= @asd.name %>
+</p>
+
+<p>
+
+  <b><%#= @asd.title %></b>
+</p>
+<h4>
+<%= form_for @as ,:url=>{:action=>'sad'} do|f| %>
+<%= f.label  :Select_sub_category %>
+<% @aaa=@asd.advs %>
+<%= collection_select(@as,:id,@aaa,:id,:subname) %></p>
+<%=f.submit  "go"%>
+<% end %></h4>
+</center>
+<%#= link_to 'Edit', edit_asd_path(@asd) %> |
+<%#= link_to 'Back',:action=>'index' %>

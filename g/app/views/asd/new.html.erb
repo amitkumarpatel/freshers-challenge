@@ -1,0 +1,19 @@
+<center>
+<h1>Add a category</h1>
+<%= form_for :asd ,  :url=>{:action=>'create'} do |f| %>
+<p>
+<%= f.label :Category_name %>
+<%= f.text_field :name%>
+</p>
+<p>
+<%#= f.label :title %>
+<%#= f.text_field :title%>
+</p>
+<p>
+<%#= f.label :Business_finance %>
+<%#= collection_select(:asd,:bus,Asd.all,:id,:name) %></p>
+</p>
+<%=f.submit "Save Category"%>
+<%end%>
+
+</center>

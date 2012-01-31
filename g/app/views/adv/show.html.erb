@@ -1,0 +1,14 @@
+<p>
+  <b>Name:</b>
+  <%= @adv.subname %>
+</p>
+
+
+<%= form_for @cm ,:url=>{:action=>'display'} do|f| %>
+<%= f.label :subname %>
+<%@abc=@adv.cms.all%>
+<%= collection_select(@cm,:id,@abc,:id,:name) %></p>
+<%=f.submit  "go"%>
+<% end %>
+<%= link_to 'Edit',:controller=>'adv',:action=>'edit',:id=>@adv.id  %> 
+<%= link_to 'Back',:controller=>'adv',:action=>'index',:id=>@asd.id %>

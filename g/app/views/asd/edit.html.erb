@@ -1,0 +1,20 @@
+<%#= render :action=>'form'%>
+<%#= render 'form' %>
+
+
+<%= form_for @asd do |f| %>
+<p>
+<%= f.label :name %>
+<%= f.text_field :name%>
+</p>
+<p>
+<%#= f.label :title %>
+<%#= f.text_field :title%>
+</p>
+<p>
+<%#= f.label "Business_&_finance" %>
+
+<%#= collection_select(:adv,:asd_id,Adv.all,:id,:conferences) %></p>
+</p>
+<%=f.submit%>
+<%end%>

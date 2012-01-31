@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>G</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+   <%= render_breadcrumbs %>
+</head>
+<body>
+
+<%= yield %>
+
+ <%#= render_breadcrumbs :separator => ' / ' %>
+</body>
+</html>

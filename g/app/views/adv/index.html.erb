@@ -1,0 +1,30 @@
+
+<center><u><h1>Listing Sub-Category</h1></u>
+
+<table border=1>
+  <tr>
+    <th>subname</th>
+  
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @adv.each do |p| %>
+  <tr>
+    <td><%= link_to p.subname,:controller=>'cm',:action=>'index',:id=>p.id %></td>
+   
+    <td><%= link_to 'Show',:action=>'show',:id=>p.id %></td>
+    <td><%= link_to 'Edit',:action=>'edit',:id=>p.id %></td>
+    <td><%= link_to 'Destroy',:action=>'delete',:id=>p.id%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<h2 align ='right'><%= link_to 'Add New SubCategory',:action=>'new',:id=>@asd.id  %></h2>
+
+</center>
+<h1><%= link_to 'Back to index page',:controller=>'asd',:action=>'index'%></br>

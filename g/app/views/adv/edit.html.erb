@@ -1,0 +1,16 @@
+<%= form_for @adv ,  :url=>{:action=>'update',:id=>@adv.id} do |f| %>
+<p>
+<%= f.label :subname %>
+<%= f.text_field :subname%>
+</p>
+<p>
+<%#= f.label "Business_&_finance" %>
+
+<%#= collection_select(:cm,:adv_id,Cm.all,:id,:subname) %></p>
+
+</p>
+
+<%=f.submit%>
+<%end%>
+
+<%#= collection_select ('adv' ,:asd_id,Asd.all,'id','conferences') %>
