@@ -1,0 +1,15 @@
+hello 
+please check the link "http://fresherschallenge.herokuapp.com/" to get the project hosted in heroku .
+
+
+
+in the home page it is 3 drop down boxes . you can check any drop down box by selecting in the given drop down box.
+
+if you select any one you will directly enter the show page for the category or subcategory or sub-sub-category.
+
+you can view the list of all the category ,sub-category or sub-sub-category in the index page.
+
+you can add category or suncategory or sub-sub-category in the details index pages .there is a link to add new respective category .  
+
+              
+  
